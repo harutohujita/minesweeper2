@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>マインスイーパー</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- タイトル画面 -->
+  <div id="title-screen">
+    <h1>マインスイーパー</h1>
+    <button class="difficulty" data-size="8" data-mines="10">🌱 初級 (8x8)</button>
+    <button class="difficulty" data-size="12" data-mines="20">🌿 中級 (12x12)</button>
+    <button class="difficulty" data-size="16" data-mines="40">🌳 上級 (16x16)</button>
+  </div>
+
+  <!-- ゲーム画面 -->
+  <div id="game-container" style="display: none;">
+    <div id="mine-counter">💣 残り: <span id="mine-count">0</span></div>
+    <div id="timer">⏱ 経過時間: <span id="time">0</span> 秒</div>
+    <div id="game-board"></div>
+    <button id="reset-button">🔄 リセット</button>
+    <button id="back-button">🏠 タイトルへ戻る</button>
+  </div>
+
+  <!-- script.js を読み込む -->
+  <script src="script.js"></script>
+</body>
+
+</html>
